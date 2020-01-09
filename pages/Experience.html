@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Original Hover Effects with CSS3</title>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.1.3/hamburgers.min.css">
+        <link rel="stylesheet" type="text/css" href="../css/demo.css" />
+        <link rel="stylesheet" type="text/css" href="../css/style_common.css" />
+        <link rel="stylesheet" type="text/css" href="../css/style4.css" />
+        <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css' />
+    </head>
+    <body>
+       <header>
+    <div class="backgroundimage">
+			<div class="backgroundimage">
+			<div class="header"></div>
+              <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+              <label for="openSidebarMenu" class="sidebarIconToggle">
+                <div class="spinner diagonal part-1"></div>
+                <div class="spinner horizontal"></div>
+                <div class="spinner diagonal part-2"></div>
+              </label>
+              <div id="sidebarMenu">
+                <ul class="sidebarMenuInner">
+                  <li>Hiba Dajani <span>System Analyst</span></li>
+                  <li><a href="../index.html" target="_blank">Intro</a></li>
+                  <li><a href="Education.html" target="_blank">Education</a></li>
+                  <li><a href="#" target="_blank">Experience</a></li>
+                  <li><a href="Skills.html" target="_blank">Skills</a></li>
+                  <li><a href="contacts.html" target="_blank">Contacts</a></li>
+                </ul>
+              </div>
+       </div>
+       </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="main"> 
+                <!-- FOURTH EXAMPLE -->
+                <div class="view view-fourth">
+                    <img src="../img/logo2-01-01.png" />
+                    <div class="mask">
+                        <h2>Sole Responsibility</h2>
+                        <p>Ottawa - Canada<br>
+                        May 2019 - August 2019<br>
+                        A non-profit organization and a running club<br><br>
+                       <span class="styling" style="font-style: normal"><strong>Project Lead & e-Content Editor (Co-Op)</strong><br> 
+                        •	Managing the project and making sure that all tasks are finalized on time with the highest quality.<br> 
+                        •	Collecting Data, through internet, photography and videography. <br>
+                        •	Solving problems and helping in the building of the UX Design for the website, web developing of the website. <br>
+                        •	Building a storyboard and creating & animating icons for the Motion Videography.<br>
+                        </span></p>
+                    </div>
+                </div>
+                <div class="view view-fourth">
+                    <img src="../img/Ayla.jpg" />
+                    <div class="mask">
+                        <h2>Ayla Oasis</h2>
+                        <p>Amman - Jordan <br>
+                            October 2015 - March 2018<br>
+                            Currently the biggest project in Jordan, 300+ Employees, specialized in Real Estate.<br><br>
+                            <span class="styling" style="font-style: normal"><strong>System Analyst & Planning Specialist Consultant.</strong><br>
+                                •	Planning different projects 
+                                •	Starting from building a knowledge base for what is required 
+                                •	Analyzing the gathered knowledge and the required flows to show how the project can be digitized.
+                                •	Proposing solutions to satisfy the requirements. 
+                                •	Creating technical documents to reflect the case and the results.
+                                •   After approval, following up the system generating with Developing team.
+                                •   Testing, implementing the systems and training employees on using them. 
+                            </span>
+                        </p>
+                    </div>
+                </div>
+                <div class="view view-fourth">
+                    <img src="../img/whatson.jpg" />
+                    <div class="mask">
+                        <h2>Whats ON</h2>
+                        <p>Amman - Jordan<br>
+                        October 2012 – June 2015<br>
+                        Currently Gracenote, 1000+ Employees, specialized in TV e-Content.<br><br>
+                            <span class="styling" style="font-style: normal"><strong>General Manager</strong><br>
+                                •	Managing the ME Office. Making sure that all issues including legal, banking, rental…etc. are on the right track.<br>
+                                •	Contacting and meeting customers, reflecting the company’s services and following up with customers after purchasing.<br> 
+                                •	Making sure that the work is going on smoothly, solving problems if required.<br>
+                                •	Representing the company in CABSAT Exhibition.<br>
+                            </span>
+                        </p>
+                    </div>
+                </div>
+                <div class="view view-fourth">
+                    <img src="../img/shoofeetv.jpg" />
+                    <div class="mask">
+                        <h2>ShooFeeTV</h2>
+                        <p>Amman - Jordan<br>
+                        February 2008 - October 2012<br>
+                        A local start up. 50 Employees. TV e-Content<br><br>
+                            <span class="styling" style="font-style: normal"><strong>System & Operation Manager</strong>
+                                • Analyse the company's requirements and plan a CMS.<br>
+                                • UI/UX Design for the website.<br>
+                                • Following up with the developers while creating the company's CMS and website.<br>
+                                • Monitoring the Testing process and solving appearing problems<br>
+                                • Following up all departments tasks in the company and make sure that they are done correctly and finish on time.<br>
+                                • Handling VIP customers' accounts.
+                            </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    </body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+	<script>
+	  $("<select />").appendTo("nav");
+
+        // Create default option "Go to..."
+        $("<option />", {
+           "selected": "selected",
+           "value"   : "",
+           "text"    : "Go to..."
+        }).appendTo("nav select");
+
+        // Populate dropdown with menu items
+        $("nav a").each(function() {
+         var el = $(this);
+         $("<option />", {
+             "value"   : el.attr("href"),
+             "text"    : el.text()
+         }).appendTo("nav select");
+        });
+                $("nav select").change(function() {
+          window.location = $(this).find("option:selected").val();
+        });
+	</script>
+</html>
