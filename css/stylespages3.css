@@ -351,6 +351,7 @@ button {
 }
 button a {
     text-decoration: none;
+    color:aliceblue;
 }
 /****************************************/
 @media (min-width: 36em){
