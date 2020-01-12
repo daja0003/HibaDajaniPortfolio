@@ -83,4 +83,19 @@ margin-left:  195px;
    background-color: #fff ;
     z-index: -10;
     }
+   .view .mask,.view .content {
+   width: 400px;
+   height: 300px;
+   position: absolute;
+   overflow: hidden;
+   top: 0;
+   left: auto;
+    
+}
+.view img {
+   width: 400px;
+   height: 300px;
+   display: block;
+   position: relative;
+}
 }
