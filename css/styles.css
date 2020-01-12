@@ -10,7 +10,7 @@ html, body {
 }
 
 body {
-    background-image: url(../img/bg.jpg);
+    background-image: url(../img/bg1.jpg);
     background-color: black;
     background-size: 150%;
     background-repeat: no-repeat;
@@ -160,7 +160,7 @@ main p {
 }
 @media (min-width: 36em){
     body {
-    background-image: url(../img/bg.jpg);
+    background-image: url(../img/bg1.jpg);
     background-size: cover;
     background-position:top;
 /*margin: -50px auto;*/
