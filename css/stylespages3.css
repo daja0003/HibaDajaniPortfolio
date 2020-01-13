@@ -357,6 +357,7 @@ button a {
 @media (min-width: 36em){
 .rotating-text {
   margin-top: 150px;
+  margine-left: 40px;
   font-family: Lato, sans-serif;
   font-weight: 600;
   font-size: 36px;
