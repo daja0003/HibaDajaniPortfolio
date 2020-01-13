@@ -144,5 +144,6 @@ main {
 @media (min-width: 36em){
 main {
     margin-top: 5%;
+    margin-left: 20%;
 }
 }
